@@ -1,0 +1,156 @@
+# ════════════════════════════════════════════════════════════
+#  OmniQuest — Comprehensive .gitignore
+# ════════════════════════════════════════════════════════════
+
+# ── Dependencies ─────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+
+# ── Next.js build output ─────────────────────────────────────
+.next/
+out/
+build/
+dist/
+.vercel/
+.turbo/
+
+# ── Environment & secrets — NEVER commit real keys ───────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.staging
+.env.staging.local
+.env.production
+.env.production.local
+.env.*.local
+*.env
+secrets.json
+secrets.yaml
+secrets.yml
+
+# ── TypeScript ───────────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ── Package manager lock files (keep only one) ───────────────
+# Uncomment the one you're NOT using:
+# package-lock.json   # if using yarn
+# yarn.lock           # if using npm
+# pnpm-lock.yaml      # if using npm or yarn
+
+# ── OS generated files ───────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ── IDE & editor configs ─────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+.history/
+*.code-workspace
+
+# ── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+
+# ── Testing ──────────────────────────────────────────────────
+coverage/
+.nyc_output/
+*.lcov
+/test-results/
+/playwright-report/
+/playwright/.cache/
+.jest-cache/
+jest_0/
+
+# ── Certificates & keys ──────────────────────────────────────
+*.pem
+*.p12
+*.p8
+*.key
+*.cert
+*.crt
+*.pfx
+*.jks
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# ── Cache & temp files ───────────────────────────────────────
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.prettiercache
+*.tmp
+*.temp
+.temp/
+.tmp/
+tmp/
+temp/
+
+# ── Uploads & user-generated content ─────────────────────────
+public/uploads/
+uploads/
+
+# ── Deployment config with secrets ───────────────────────────
+.netlify/
+.firebase/
+firebase-debug.log
+.firebaserc
+vercel.json          # only if it contains secrets; delete this line if not
+serverless.yml       # only if it contains secrets; delete this line if not
+
+# ── Docker ───────────────────────────────────────────────────
+.dockerignore
+docker-compose.override.yml
+
+# ── Python (if any scripts present) ─────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+venv/
+.venv/
+env/
+
+# ── Misc binaries & archives ─────────────────────────────────
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.dll
+*.so
+*.dylib
+
